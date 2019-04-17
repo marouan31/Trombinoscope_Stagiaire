@@ -1,0 +1,223 @@
+/*Couleurs thème: 
+        fond gris :#B0B6C3;
+        blanc clair : #E8E9EA;
+        blanc foncé : #E7E7E7;
+        mauve clair : #7989AE;
+        mauve foncé : #5C75B0;
+        fond violet : #7560BA;
+        violet 1 : #C6BAEB;
+        violet 2 : #9B89D4;
+        violet 3 : #5942A3;
+        violet 4 : #402694; */
+
+@font-face { font-family: 'dillova';
+    src: url('Dillova.ttf') format('truetype');
+    
+}
+  
+    
+
+@media only screen and (max-device-width : 480px) {
+    body {
+        background-color: #B0B6C3;
+    }
+    
+    .img,
+    #cache,
+    #accueil, 
+    nav li:first-child {
+        display: none;
+    }
+
+    #fixed {
+        border: 1px solid #5C75B0;
+        border-radius: 10px;
+        background-color: #7989AE;
+        color: #E8E9EA;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        padding: 5px;
+    }
+
+    nav li {
+        list-style-type: none;
+    }
+    
+    li a {
+        text-decoration: none;
+        color: #E8E9EA;
+    }
+    
+    article,
+    section {
+        border: 1px solid #5C75B0;
+        border-radius: 10px;
+        background-color: #E7E7E7;
+        width: 90%;
+        margin: 10px auto;
+        padding: 5px;
+        color: #5C75B0;
+    }
+    
+    .photo {
+        text-align: center;
+    }
+    
+    p>a {
+        text-decoration: none;
+        color: #5C75B0;
+    }
+}
+
+@media screen and (min-device-width : 480px) {
+    body {
+        background-color: #B0B6C3;
+        width: 95%;
+        margin: auto;
+    }
+    
+    #fixed {
+        position: fixed;
+        z-index: 10;
+        border: 1px solid #5C75B0;
+        border-radius: 10px;
+        background-color: #7989AE;
+        color: #E8E9EA;
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    
+    #cache {
+        border: 1px solid #B0B6C3;
+        border-radius: 10px;
+        background-color: #B0B6C3;
+        color: #E8E9EA;
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    
+    #fixed h1 {
+        font-family: 'dillova', georgia, sans-serif;
+        font-size: 3em;
+        margin: 0;
+    }
+    
+    nav li {
+        list-style-type: none;
+        display: inline;
+        padding: 15px;
+        
+    }
+    
+    li a {
+        text-decoration: none;
+        color: #E8E9EA;
+    }
+    
+    li a:hover {
+        text-decoration: none;
+        color: #5942A3;
+    }
+    
+    .titre,
+    nav {
+        display: inline;
+    }
+    
+    article,
+    section {
+        position: relative;
+        z-index: 1;
+        border: 2px solid #5C75B0;
+        border-radius: 10px;
+        background-color: #E7E7E7;
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+        color: #5942A3;
+    }
+    
+    #accueil {
+        display: flex;
+        align-items: center;
+    }
+    
+    .img>img {
+        width :60%;
+        border: 1px solid white;
+        border-radius: 200px;
+        align-items: center;
+    }
+    
+    .bienvenue h1 {
+        font-family: 'dillova', georgia, sans-serif;
+        font-size: 3em;
+        text-align: center;
+    }
+    
+    article h2,
+    #ancre_comp,
+    #ancre_moi,
+    #ancre_contact{
+        text-align: center;
+        font-size: 2em;
+    } 
+    
+    #moi {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #ancre_moi {
+        width: 100%;
+    }
+    
+    .photo {
+        align-self:flex-end;
+    }
+    
+    .ai {
+        align-self: center
+    }
+    
+    .q h3 {
+        text-align: center;
+    }
+    #contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #ancre_contact {
+        width: 100%;
+    }
+    
+    #contact p {
+        margin: 15px;
+    }
+    
+    p>a {
+        text-decoration: none;
+        color: #5942A3;
+    }
+    
+    p>a:hover {
+        border: 1px solid #5C75B0;
+        border-radius: 5px;
+        background-color: #5C75B0;
+        color :#E8E9EA;
+    }
+    
+}

@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#photo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+h1,
+h2 {
+    text-align: justify;
+}
+
+#infos_perso {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#formation {
+    display: flex;
+}
+
+#experience {
+    display: flex;
+
+}
+
+li {
+    list-style-type: none;
+    padding: 1em;
+}
+
+div {
+    text-align: justify;
+}
+
+.droite {
+
+    width: 800px;
+    background-color: lavenderblush;
+}
+
+#experience .gauche {
+    background-color: pink;
+
+    width: 200px;
+    height: 350px;
+}
+
+#formation .gauche li {
+    padding: 3em;
+    margin-bottom: 20px;
+    background-color: pink;
+}
+
+#formation .droite {
+    width: 835px;
+}

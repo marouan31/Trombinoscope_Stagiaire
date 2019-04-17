@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,300,600');
+
+/*avec  flex-box */
+#contenitore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#primaColonna {
+    padding: 0 3%;
+    border-right: 1px solid silver;
+    margin-right: 3%;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Raleway';
+    margin-top: 0;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2em;
+    border-bottom: 1px solid black;
+}
+
+h2 {
+    font-size: .9em;
+    letter-spacing: .5em;
+    margin-top: 10%;
+    padding: 2% 4%;
+    color: #cdcdcd;
+    background-color: #ededed;
+}
+
+h3 {
+    /*padding-right: .5em;*/
+    font-size: 1.5em;
+    margin-right: 3%;
+}
+
+h4 {
+    /*padding-right: .5em;*/
+    font-size: .8em;
+    white-space: nowrap;
+}
+
+div.titrePara {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+div#contatti {
+    display: block;
+    text-align: center;
+    font-family: 'Raleway';
+}
+
+p {
+    font-family: 'Raleway';
+    font-weight: 300;
+    /*text-transform: uppercase;*/
+    letter-spacing: .1em;
+    text-align: center;
+
+}
+
+a {
+    font-weight: 300;
+    /*text-transform: uppercase;*/
+    letter-spacing: .1em;
+    /* decorazione link*/
+    display: block;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    margin: 50px 4px;
+    padding: 20px 10px;
+    box-shadow: inset 0 0 0 4px white,
+        0 0 0 1px gray;
+    transition: all .5s ease;
+}
+
+a:hover {
+    background: white;
+    color: black;
+    box-shadow: inset 0 0 0 4px silver, 0 0 0 1px silver;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 2%;
+    font-size: .85em;
+    line-height: 1.5;
+}
+
+li {
+    margin-bottom: 0.2em;
+}
+
+img {
+    width: 40%;
+    border: 8px solid transparent;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+/* media queri punti ri rottura 
+<768 visualizzazione in colonna e padding a 0;
+768-1024 padding 5%
+1024-1440 padding 10%
+1440-1680 padding 15%
+1680-1920  padding 20%
+oltre 1920padding 25%
+mediaquery */
+
+@media only screen and (max-width: 768px) {
+
+    #contenitore {
+        flex-direction: column;
+    }
+
+    #primaColonna {
+        border-right: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+
+    div.titrePara {
+        display: block;
+        border-top: 1px solid silver;
+
+    }
+
+    h3 {
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    div#contatti {
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+
+    a {
+        display: inline-block;
+        width: 48%;
+        margin-top: 24px;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        background-color: transparent;
+        color: silver;
+        font-weight: 300;
+        font-size: 2em;
+        letter-spacing: 0;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+    #contenitore {
+        padding-top: 5%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1441px) {
+    #contenitore {
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1681px) {
+    #contenitore {
+        padding-top: 5%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media only screen and (min-width: 1681px) and (max-width: 1921px) {
+    #contenitore {
+        padding-top: 5%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media only screen and (min-width: 1981px) {
+    #contenitore {
+        padding-top: 5%;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}

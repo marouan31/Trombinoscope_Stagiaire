@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai');
+*{
+  font-family: 'Hind Madurai', sans-serif;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style-type: none;
+}
+#cv{
+  width: 1024px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #2E4A62;
+  color: #F0EDE5;
+  font-size: 19px;
+}
+#cv>div{
+  /*border: 1px solid black;*/
+  margin: 10px;
+}
+/*photo*/
+#photo{
+  width: 140px;
+  height: 182px;
+  padding: 21px 47px;
+}
+img{
+  width: 140px;
+  height: 182px;
+  box-sizing: content-box;
+  border-radius: 100%;
+}
+
+/*tete*/
+#tete {
+  width: 746px;
+  height: 224px;
+}
+#tete div:first-child{
+ color: #98DDDE;
+ font-size: 50px;
+ text-align: left;
+}
+#tete .contenu{
+   padding-top: 20px;
+}
+
+/*contact*/
+#contact{
+  width: 1002px;
+  height: 44px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+#contact ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+/*dd*/
+.titre{
+  text-align: center;
+  color: #98DDDE;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #98DDDE;
+}
+
+/*experience*/
+#experience{
+  width: 490px;
+  height: 600px;
+}
+#experience .file
+{
+  width: 480px;
+  padding: 10px;
+  margin: 10px;
+}
+#experience h4{
+  color: #98DDDE;
+}
+
+/*competence*/
+#competence{
+  width: 490px;
+  height: 600px;
+}
+#competence .file{
+  width: 480px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+#competence .file div{
+  width: 160px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#competence h3{
+  color: #98DDDE;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+#competence .file:last-child{
+  justify-content: flex-start;
+  margin-left: 40px;
+}
+
+/*formation*/
+#formation{
+  width: 490px;
+  height: 180px;
+}
+#formation h3{
+  color: #98DDDE;
+}
+#formation .contenu{
+  width: 480px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+/*info*/
+#info{
+  width: 490px;
+  height: 180px;
+}
+#info .contenu{
+  width: 490px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 40px;
+}

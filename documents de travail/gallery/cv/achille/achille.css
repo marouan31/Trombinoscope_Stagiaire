@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+::selection {
+  background-color: #B2CCD6;
+}
+
+html {
+  background-color: #263238;
+  color: #EEFFFF;
+}
+
+body {
+  width: 85%;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+/*div {
+  border: 2px solid darkgrey;
+}*/
+h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 6em;
+}
+
+h2 {
+  margin: 0;
+  padding: 0.25em 0;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+h3 {
+  margin: 0;
+  padding-top: 0.75em;
+  padding-bottom: 0.25em;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+p {
+  margin: 0.25em 0;
+  margin-left: 0.5em;
+}
+
+.rouge {
+  color: #F07178;
+}
+
+.pink {
+  color: #FF5370;
+}
+
+.yellow {
+  color: #FFE082;
+}
+
+.green {
+  color: #C3E88D;
+}
+
+.blue {
+  color: #82AAFF;
+}
+
+.orange {
+  color: #F78C6A;
+}
+
+.purple {
+  color: #C792EA;
+}
+
+.teal {
+  color: #009688;
+}
+
+.teallight {
+  color: #73d1c8;
+}
+
+#header, #body, #footer {
+  display: flex;
+  /*border: 2px dotted lightgrey;*/
+}
+
+#header {
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4em;
+}
+
+.name {
+  width: 40em;
+  padding: 3em;
+  align-self: center;
+  text-align: left;
+  text-shadow: 4px 4px 0px #82AAFF;
+}
+
+h1:hover {
+  text-shadow: -4px -4px 0px #F07178;
+  transition: ease-in-out 0.2s;
+}
+
+.header_b {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.metier, .contact {
+  padding: 3em;
+}
+
+.metier {
+  text-align: left;
+  width: 60%;
+}
+
+.contact {
+  text-align: right;
+  width: 40%;
+}
+
+.yellow>a {
+  text-decoration: none;
+  color: #FFE082;
+}
+
+.yellow>a:hover {
+  text-decoration: underline;
+  text-decoration-color: #82AAFF;
+  color: #FFE082;
+  animation: ease-in-out 0.1s;
+}
+
+.yellow>a:visited {
+  text-decoration: none;
+  color: #FFE082;
+}
+
+#body {
+  padding: 1.5em 0;
+  flex-direction: column;
+}
+
+a {
+  font-weight: 500;
+  color: #B2CCD6;
+  text-decoration: underline;
+  text-decoration-color: #FFE082;
+}
+
+a:visited {
+  color: #B2CCD6;
+  text-decoration: underline;
+  text-decoration-color: #F78C6A;
+}
+
+a:hover {
+  color: #B2CCD6;
+  text-decoration: underline;
+  text-decoration-color: #82AAFF;
+  transition: ease-in-out 0.2s;
+}
+
+.profil {
+  width: 40em;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  align-self: center;
+  text-align: center;
+  font-size: 1.35em;
+}
+
+.body_b {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.body_b_container {
+  padding: 3em;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.experiences {
+  padding: 3em;
+  width: 50%;
+}
+
+#footer {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 6em;
+}
+
+.activites {
+  padding: 3em;
+  width: 50%
+}
+
+.liens {
+  padding: 3em;
+  width: 50%;
+}
+
+.liens>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.liens>ul>li:first-of-type:before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url('./github-logo.svg');
+  background-size: 1em;
+  margin-right: 0.5em;
+}
+
+.liens>ul>li:nth-of-type(2):before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url('./linkedin-logo.svg');
+  background-size: 1em;
+  margin-right: 0.5em;
+}
+
+.liens>ul>li:nth-of-type(3):before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url('./twitter-logo-button.svg');
+  background-size: 1em;
+  margin-right: 0.5em;
+}
+
+.liens>ul>li:last-of-type:before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url('./soundcloud-logo.svg');
+  background-size: 1em;
+  margin-right: 0.5em;
+}
+
+.date {
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1200px) {
+  ::selection {
+    background-color: #B2CCD6;
+  }
+
+  html {
+    background-color: #263238;
+    color: #EEFFFF;
+  }
+
+  body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+  }
+
+  /*div {
+    border: 2px solid darkgrey;
+  }*/
+  h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 6em;
+  }
+
+  h2 {
+    margin: 0;
+    padding-top: 0.75em;
+    padding-bottom: 0.25em;
+    font-weight: 700;
+    font-size: 2em;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0.25em 0;
+    font-weight: 400;
+    font-size: 1.3em;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    margin: 0.25em 0;
+  }
+
+  p {
+    margin: 0.25em 0;
+    margin-left: 0.5em;
+  }
+
+  .rouge {
+    color: #F07178;
+  }
+
+  .pink {
+    color: #FF5370;
+  }
+
+  .yellow {
+    color: #FFE082;
+  }
+
+  .green {
+    color: #C3E88D;
+  }
+
+  .blue {
+    color: #82AAFF;
+  }
+
+  .orange {
+    color: #F78C6A;
+  }
+
+  .purple {
+    color: #C792EA;
+  }
+
+  .teal {
+    color: #009688;
+  }
+
+  .teallight {
+    color: #73d1c8;
+  }
+
+  #header, #body, #footer {
+    display: flex;
+    /*border: 2px dotted lightgrey;*/
+  }
+
+  #header {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 3em;
+  }
+
+  .name {
+    width: 40em;
+    padding: 3em;
+    align-self: center;
+    text-align: center;
+    text-shadow: 4px 4px 0px #82AAFF;
+  }
+
+  h1:hover {
+    text-shadow: -4px -4px 0px #F07178;
+    transition: ease-in-out 0.2s;
+  }
+
+  .header_b {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .metier, .contact {
+    padding: 3em;
+  }
+
+  .metier {
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact {
+    text-align: center;
+    width: 100%;
+  }
+
+  .yellow>a {
+    text-decoration: none;
+    color: #FFE082;
+  }
+
+  .yellow>a:hover {
+    text-decoration: underline;
+    text-decoration-color: #82AAFF;
+    color: #FFE082;
+    animation: ease-in-out 0.1s;
+  }
+
+  .yellow>a:visited {
+    text-decoration: none;
+    color: #FFE082;
+  }
+
+  #body {
+    padding: 1.5em 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  a {
+    font-weight: 500;
+    color: #B2CCD6;
+    text-decoration: underline;
+    text-decoration-color: #FFE082;
+  }
+
+  a:visited {
+    color: #B2CCD6;
+    text-decoration: underline;
+    text-decoration-color: #F78C6A;
+  }
+
+  a:hover {
+    color: #B2CCD6;
+    text-decoration: underline;
+    text-decoration-color: #82AAFF;
+    transition: ease-in-out 0.2s;
+  }
+
+  .profil {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    align-self: center;
+    text-align: center;
+    font-size: 1.35em;
+  }
+
+  .body_b {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .body_b_container {
+    padding: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .experiences, .competences, .formation {
+    padding: 3em;
+    width: 70%;
+  }
+
+  #footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4em;
+  }
+
+  .activites {
+    padding: 3em;
+    width: 70%
+  }
+
+  .liens {
+    padding: 3em;
+    width: 70%;
+  }
+
+  .liens>ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .liens>ul>li:first-of-type:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url('./github-logo.svg');
+    background-size: 1em;
+    margin-right: 0.5em;
+  }
+
+  .liens>ul>li:nth-of-type(2):before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url('./linkedin-logo.svg');
+    background-size: 1em;
+    margin-right: 0.5em;
+  }
+
+  .liens>ul>li:nth-of-type(3):before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url('./twitter-logo-button.svg');
+    background-size: 1em;
+    margin-right: 0.5em;
+  }
+
+  .liens>ul>li:last-of-type:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url('./soundcloud-logo.svg');
+    background-size: 1em;
+    margin-right: 0.5em;
+  }
+
+  .date {
+    font-weight: 300;
+  }
+}

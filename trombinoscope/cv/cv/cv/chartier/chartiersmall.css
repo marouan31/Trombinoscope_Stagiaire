@@ -1,0 +1,134 @@
+/*Mise en page générale*/
+body {
+    width: 100%;
+    overflow: auto;
+    margin: 0;
+    font-family: Century Schoolbook
+}
+
+main {
+    display: flex
+}
+
+aside#col1,
+#encart {
+    display: none
+}
+
+/*.ico {display: inline-block; width: 20px}*/
+
+footer {
+    display: flex;
+    background-color: #383230;
+    width: 100%;
+    color: white;
+    text-align: center;
+    justify-content: space-between
+}
+
+footer div {
+    width: 30%
+}
+
+footer ul {
+    padding-left: 0
+}
+
+footer li {
+    list-style-type: none
+}
+
+footer div {}
+
+article#col2 {
+    font-family: Century Schoolbook;
+    font-size: 0.8em
+}
+
+article#col2 h1 {
+    font-weight: bold;
+    font-size: 2.4em;
+    padding-left: 10px;
+    padding-top: 40px;
+    margin: 10px
+}
+
+article#col2 h2 {
+    font-family: Bradley Hand ITC;
+    text-align: right;
+    padding-right: 30px;
+    margin: 0
+}
+
+article img {
+    width: 150px;
+    height: 150px
+}
+
+header {
+    display: flex;
+    background-color: #383230;
+    height: 200px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 10px
+}
+
+/*Gestion des fieldsets et sections*/
+
+fieldset {
+    margin: 5px 20px 5px 20px;
+    border: 1px solid #0a5e71;
+    border-radius: 2px
+}
+
+fieldset legend {
+    font-size: 1.2em
+}
+
+fieldset img {
+    vertical-align: middle
+}
+
+#competences {
+    margin-top: 20px;
+    margin-left: 0
+}
+
+#experiences {
+    margin-bottom: 30px
+}
+
+#competences fieldset legend {
+    margin-left: 10px;
+    text-transform: uppercase
+}
+
+#formation fieldset legend {
+    margin-left: 90px;
+    text-transform: uppercase
+}
+
+#experiences fieldset legend {
+    margin-left: 170px;
+    text-transform: uppercase
+}
+
+/*règles des tableaux*/
+td {
+    padding-left: 10px;
+    text-align: justify
+}
+
+#competences tr {
+    height: 25px
+}
+
+#competences th {
+    width: 30%;
+    text-align: left
+}
+
+a {
+    color: white
+}

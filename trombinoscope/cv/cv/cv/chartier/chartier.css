@@ -1,0 +1,154 @@
+/*Mise en page générale*/
+body {
+    width: 768px;
+    overflow: auto;
+    margin: auto;
+    font-family: Century Schoolbook
+}
+
+main {
+    display: flex;
+    margin: auto
+}
+
+#encart {
+    height: 200px;
+    width: 20px;
+    background-image: url(images/encart.jpg);
+    margin-top: 10px
+}
+
+aside#col1 {
+    flex-direction: column;
+    text-align: center;
+    background-color: #383230;
+    color: white;
+    width: 220px;
+    height: inherit;
+    padding: 5px;
+}
+
+aside#col1 div {
+    margin-bottom: 40px;
+    padding: 5px
+}
+
+aside#col1 ul li {
+    list-style-type: none;
+    margin-left: -30px
+}
+
+aside#col1 p {
+    text-decoration: underline
+}
+
+#photo {
+    width: 100%;
+    margin-top: 10px
+}
+
+.ico {
+    width: 20px
+}
+
+a {
+    color: white
+}
+
+article#col2 {
+    font-family: Century Schoolbook;
+    font-size: 0.8em
+}
+
+article#col2 h1 {
+    font-weight: bold;
+    font-size: 2.4em;
+    padding-left: 10px;
+    padding-top: 40px;
+    margin: 10px
+}
+
+article#col2 h2 {
+    font-family: Bradley Hand ITC;
+    text-align: right;
+    padding-right: 30px;
+    margin: 0
+}
+
+article#col2 img {
+    display: none
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/bandeaucolore.jpg);
+    height: 200px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 10px
+}
+
+/*Gestion des fieldsets et sections*/
+
+fieldset {
+    margin: 10px 20px 5px 20px;
+    border: 1px solid #0a5e71;
+    border-radius: 2px;
+}
+
+fieldset legend {
+    font-size: 1.2em
+}
+
+fieldset img {
+    vertical-align: middle
+}
+
+#competences {
+    margin-top: 20px;
+    margin-left: 0
+}
+
+#experiences {
+    margin-bottom: 30px
+}
+
+#competences fieldset legend {
+    margin-left: 10px;
+    text-transform: uppercase
+}
+
+#formation fieldset legend {
+    margin-left: 90px;
+    text-transform: uppercase
+}
+
+#experiences fieldset legend {
+    margin-left: 170px;
+    text-transform: uppercase
+}
+
+/*règles des tableaux*/
+td {
+    padding-left: 10px;
+    text-align: justify
+}
+
+#competences tr {
+    height: 25px
+}
+
+#competences th {
+    width: 30%;
+    text-align: left
+}
+
+
+
+
+footer {
+    display: none;
+    /*    visibility: hidden;*/
+    /*    position: absolute*/
+}

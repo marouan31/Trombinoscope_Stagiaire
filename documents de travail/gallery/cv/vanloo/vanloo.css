@@ -1,0 +1,254 @@
+@media screen and (max-width: 480px) {
+
+    /* Général*/
+    @font-face {
+        font-family: 'ITCAvantGardeStd-Bk';
+        src: url(ITCAvantGardeStd-Bk.ttf) format('truetype');
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    li {
+        font-family: 'ITCAvantGardeStd-Bk', sans-serif;
+    
+
+    }
+    h1,h2,nav {
+        text-align: center;
+    }
+
+    body {
+        width: 100%;
+        max-width: 480px;
+        margin: 0;
+        height: 100%;
+        background-color: #E1E1E1;
+    }
+
+    section {
+        padding: 5px;
+        
+      
+    }
+
+    /* --- menu navigation --- */
+    li,
+    li a,
+    li a:hover {
+        width: auto;
+        height: 1.5em;
+        display: block;
+        margin: 0px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li a {
+        text-decoration: none;
+        color: white;
+        /*background-color: black*/
+    }
+
+    li a:hover {
+        color: black;
+        /*background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;*/
+    }
+
+    header {
+        margin: 0;
+        /*position: fixed;*/
+        background-color: grey;
+        width: 100%;
+        color: white;
+        /*display: flex;*/
+        /*align-items: center;*/
+        overflow: auto;
+        border-bottom: 1px solid grey;
+    }
+
+
+    nav {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* --- accueil --- */
+    #titre {
+        /*padding-top: 150px;*/
+    }
+
+    /* --- Competences --- */
+    #competences {
+        background-color: #B0B0B0;
+    }
+
+    /* --- Exp --- */
+    #experiences {
+        background-color: #E1E1E1;
+    }
+
+    /* --- Formations --- */
+    #formations {
+        background-color: #B0B0B0;
+    }
+    table, th, td {
+        border: 1px solid black;
+    }
+    table {
+        border-collapse: collapse;
+    }
+
+    /* --- Contact --- */
+    #contact {
+        background-color: #E1E1E1;
+    }
+
+    /* ---   --- */
+
+
+}
+
+
+
+/* --------------------------- */
+/* --------------------------- */
+/* ---- Format Desktop ------- */
+
+@media screen and (min-width: 480px) {
+
+    /* Général*/
+    @font-face {
+        font-family: 'ITCAvantGardeStd-Bk';
+        src: url(ITCAvantGardeStd-Bk.ttf) format('truetype');
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    li,td {
+        font-family: 'ITCAvantGardeStd-Bk', sans-serif;
+
+    }
+    h1,h2 {
+        text-align: center
+    }
+
+    body {
+        margin: 0;
+        height: 80%;
+        background-color: #E1E1E1;
+    }
+
+    section {
+        margin-bottom: 0;
+        margin-top: 0;
+        width: 100%;
+        padding-top: 10px
+            }
+    header {
+        padding-left: 10px;
+    }
+
+    /* --- menu navigation --- */
+    li,
+    li a,
+    li a:hover {
+        width: auto;
+        height: 1.5em;
+        display: inline;
+        margin: 1%;
+        /* border: 1px solid black;
+    border-radius: 5px;*/
+
+
+    }
+
+    li a {
+        text-decoration: none;
+        color: white;
+        /*background-color: black*/
+    }
+
+    li a:hover {
+        color: black;
+        /*background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;*/
+    }
+
+    header {
+        margin: 0;
+        position: fixed;
+        background-color: grey;
+        width: 100%;
+        color: white;
+        display: flex;
+        align-items: center;
+
+    }
+
+    header h1,
+    header nav {
+        float: left;
+    }
+    header h1 {
+        width: auto;
+    }
+    nav {
+        text-align: right;
+        width: 100%;
+    }
+
+    /* --- accueil --- */
+    #titre {
+        padding-top: 150px;
+    }
+
+    /* --- Competences --- */
+    #competences {
+        background-color: #B0B0B0;
+        
+    }
+    #competences2, #experiences2, #titre2, #formations2, #contact2, #interet2,#autres2, #perso2 {
+        padding-left: 10%;
+        margin: 0;
+        width: 80%;
+    }
+   
+    }
+
+    /* --- Exp --- */
+    #experiences {
+        background-color: #E1E1E1;
+    }
+
+    /* --- Formations --- */
+    #formations {
+        background-color: #B0B0B0;
+    }
+#formations2 {
+
+    text-align: center;
+    }
+table {
+    display: block;
+    margin-left: auto;
+   margin-right: auto;
+}
+
+    /* --- Contact --- */
+    #contact {
+        background-color: #E1E1E1;
+    }
+#contact2 {
+    text-align: center
+}

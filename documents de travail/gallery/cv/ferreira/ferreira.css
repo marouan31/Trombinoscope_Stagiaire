@@ -1,0 +1,165 @@
+
+ 
+@media screen and (min-width: 768px) {
+body {
+    width: 768px;  
+    margin:0 auto;
+    margin-top: 10px; 
+    padding: 20px;
+    border: 1px solid black; 
+    vertical-align:middle; 
+    text-align: justify; 
+    transition: transform .2s;
+  }
+} 
+
+@media screen and (max-width: 768px) {
+body {
+    width: 96%; 
+    min-width: 550px; 
+    margin-left: 2%;
+    margin-right: 2%; 
+    padding: 20px;
+    border: 1px solid black; 
+  }
+}
+
+header{ 
+    margin-bottom: 40px;
+}
+
+section#bloc_body
+{
+    display:flex; 
+}
+
+
+
+
+
+
+/* ANIMATIONS */
+
+p,h4,h3,img
+{
+    transition: transform .2s;
+}
+
+p:hover, img:hover{
+    
+    transform: scale(1.05);
+}
+
+h4:hover,h3:hover{
+    text-decoration: underline;
+}
+
+h1:after{
+    content:'';
+}
+h1:hover:after{
+    content:' ';
+}
+
+
+
+
+
+
+/* BLOC LEFT */
+
+section#bloc_left
+{
+    display: flex;
+    flex-direction: column; 
+    width: 200px;
+    min-width: 200px; 
+    background: #222;
+    color: #DDD; 
+    padding: 10px;  
+}
+
+#photo{
+    width: 92%;
+    height: auto;
+    padding: 4%;
+    border-radius: 10px;
+    min-height: 0;
+    min-width: 0;
+}
+section#about{ 
+}
+section#informations > section :first-child
+{  
+    font-weight: bold
+}
+
+
+
+
+
+
+/* BLOC RIGHT */
+
+section#bloc_right{
+    
+    margin-left: 40px;
+}
+
+section#bloc_right > section{
+    
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid black;
+}
+
+
+/* COMPETENCES */
+
+section#competences{
+    display:flex;
+    justify-content: space-around; 
+}
+ 
+
+
+/* EXPERIENCES */
+
+section#experiences{
+    display:flex; 
+    flex-direction: column;
+}
+
+section#experiences > section
+{ 
+    display: flex;
+    margin-left: 20px;
+} 
+
+section#experiences > section > p
+{  
+    margin-left: 20px;
+}
+
+section#experiences > section :first-child
+{  
+    font-weight: bold
+}
+
+/* FORMATIONS */
+
+section#formations > section
+{ 
+    display: flex;
+    margin-left: 20px;
+} 
+
+section#formations > section > p
+{  
+    margin-left: 20px;
+}
+
+section#formations > section :first-child
+{  
+    font-weight: bold
+}
